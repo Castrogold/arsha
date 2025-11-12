@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+.body {
+  display: flex;
+  height: 100vh;
+}
+.body .left {
+  width: 40%;
+  background-color: white;
+  padding: 20px;
+}
+.body .right {
+  width: 60%;
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+  background-image: url(../image/240_F_416557440_Sz2Ka4Zi4d9lAIsdoB7U37oDCm3TvpuD.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.body .left h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: 800;
+  margin-left: 20%s;
+}
+.body .left .first {
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 20%;
+}
+.body .left form {
+  width: 60%;
+  margin: auto;
+}
+.body .left form div {
+  margin-bottom: 20px;
+}
+.body .left form div input[type="email"],
+.body .left form div input[type="date"] {
+  width: 95%;
+  height: 35px;
+  padding-left: 10px;
+  margin-right: 11pxs;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.body .left form div input[type="text"] {
+  height: 35px;
+  padding-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  width: 43%;
+}
+select {
+  width: 97%;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px gray solid;
+}
+.body .left form button {
+  width: 97%;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px gray solid;
+  background-color: black;
+  color: white;
+  margin-bottom: 10px;
+}
+.body .left form p a {
+  color: black;
+}
+.body .left form p {
+  margin-bottom: 20px;
+}
+.body .right.btn button {
+  width: 90px;
+  height: 35px;
+  background-color: transparent;
+  color: white;
+  border-radius: 20px;
+  border: 2px solid white;
+}
+.body .right .btn .special {
+  border: none;
+}
+.body .right .btn {
+  margin-right: 20px;
+  margin-top: 20px;
+  bottom: 10px;
+}
