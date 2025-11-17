@@ -880,20 +880,15 @@ ul {
   font-family: "jost" sans-serif;
   padding: 30px;
   background-color: white;
+  display: flex;
 }
-.subs .container {
-  background-color: #f5f6f8;
-  border-radius: 10px;
-  justify-content: center;
-  gap: 120px;
-  padding: 50px;
-}
-.subs .container .box {
+.subs .box {
   display: flex;
   justify-content: center;
   gap: 120px;
+  width: 100%;
 }
-.subs .container .left {
+.subs .left {
   width: 30%;
 }
 .subs h2 {
@@ -906,53 +901,52 @@ ul {
   margin-bottom: 20px;
   color: #444444;
 }
-.subs .container .left .su {
+.subs .left .su {
   display: flex;
-  align-items: center;
-  border: 1px solid;
-  border-radius: 25px;
-  border-color: #47b2e4;
+  justify-content: center;
   overflow: hidden;
 }
-.subs .container .left .su [type="email"] {
+.subs .left .su [type="email"] {
+  width: 600px;
+  height: 40px;
   border: none;
-  padding: 12px 20px;
-  font-size: 16px;
-  width: 250px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid #47b2e4;
 }
-.subs .container .left .su button {
+.subs .left .su button {
+  width: 200px;
+  border-radius: 20px;
+  height: 40px;
+  border: none;
   background-color: #47b2e4;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  font-weight: 800;
+  position: relative;
+  right: 35px;
 }
-.subs .container .rigt {
+.subs .rigt {
   width: 40%;
 }
-.subs .container .right img {
+.subs .right img {
   width: 60%;
   height: auto;
 }
 @media only screen and (max-width: 700px) {
-  .subs .container .box {
-    flex-wrap: wrap;
+  .subs {
     display: flex;
+    flex-wrap: wrap;
   }
-  .subs .container .left .su {
+  .subs .box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .subs .right {
     width: 100%;
   }
-  .subs p {
-    display: inline-flex;
-    font-size: 16px;
+  .subs .left {
+    width: 100%;
   }
-  .subs h2 {
-    display: inline-flex;
-    justify-content: center;
-  }
-  .subs .container .right img {
+  .subs .right img {
     width: 100%;
   }
 }
@@ -1035,6 +1029,10 @@ ul {
   }
   .blog .container .box {
     width: 100%;
+  }
+  .blog .container .box .date {
+    right: 0%;
+    top: 41.5%;
   }
 }
 
